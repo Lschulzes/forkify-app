@@ -152,6 +152,10 @@ const controlRemoveCartItems = function (recipeId) {
   recipeView.update(model.state.recipe);
 };
 
+const newFeature = function () {
+  console.log('Welcome to the Application!');
+};
+
 (() => {
   bookmarksView.addHandlerRender(controlBookmarkLoad);
   recipeView.addHandlerRender(controlRecipes);
@@ -164,4 +168,5 @@ const controlRemoveCartItems = function (recipeId) {
   recipeView.addHandlerAddCart(controlCartItems);
   cartView.addHandlerShow(controlCartView);
   cartView.addHandlerRemove(controlRemoveCartItems);
+  newFeature();
 })();
